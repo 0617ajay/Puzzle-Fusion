@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+
+
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid white;
+    background: lightgray;
+    color: black;
+    font-size: 18px;
+}
+
+button {
+    font-family: 'Play', cursive;
+}
+
+body {
+    background: linear-gradient(0deg, #FFF6CD, #170055);
+    height: 100vh;
+    overflow: hidden;
+}
+
+#container {
+    width: 400px;
+    height: 475px;
+    background: linear-gradient(to bottom, white, white);
+    border-radius: 16px 16px 16px 16px;
+    border: 1px solid #d6ced6;
+    box-shadow: 0px 14px 30px rgba(0, 0, 0, 0.5);
+    margin: 60px auto;
+    overflow: hidden;
+    /* z-index:5; */
+}
+
+.screen {
+    width: inherit;
+    height: inherit;
+}
+
+#splash {
+    display: none;
+    text-align: center;
+}
+
+#splash h1 {
+    margin-top: 70px;
+    font-size: 80px;
+}
+
+#splash h1 .char1 {
+    color: #6528F7;
+}
+
+#splash h1 .char2 {
+    color: #A076F9;
+
+}
+
+#splash #start {
+    background: linear-gradient(to right, #A076F9, #EDE4FF);
+    color: black;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-family: 'Play', cursive;
+}
+
+
+
+#control {
+    position: absolute;
+    top: 159px;
+    left: 60px;
+    width: 200px;
+    margin: -10px auto;
+    text-align: center;
+}
+
+#control h2 {
+    font-family: 'Play', cursive;
+    display: inline;
+}
+#control > div{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#control button {
+    
+    margin: 1px 4px;
+    padding: 5px;
+}
+#control button:hover{
+    cursor: pointer;
+}
+#control span{
+    display: block;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+
+
+#pause {
+    display: none;
+    position: absolute;
+    background: rgba(11, 3, 250, 0.278);
+    z-index: 1;
+    border-radius: inherit;
+    text-align: center;
+}
+
+#pause h1 {
+    margin-top: 150px;
+    color: #b9a4ea;
+}
+
+#pause button {
+    display: block;
+    background: linear-gradient(to right, #A076F9, #EDE4FF);
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    margin: 30px auto;
+    font-size: 30px;
+}
+
+#end {
+    display: none;
+}
+
+#game {
+    padding: 10px 10px;
+    position: relative;
+    display: none;
+}
+
+#game #info {
+    padding: 5px 10px;
+    border-radius: 3px;
+    background: #060047be;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#game #info #pausebtn {
+    float: right;
+}
+
+#game #gamearea {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    background: #060047be;
+}
+
+#game #gamearea .element {
+    width: 75px;
+    height: 75px;
+    background: transparent;
+    border: 1px solid #071952;
+    display: inline-block;
+    margin-right: -4px;
+    margin-bottom: -4px;
+    overflow: hidden;
+    font-size: 30px;
+    line-height: 2.2;
+    text-align: center;
+    font-family: 'Play', cursive;
+    color: rgb(150, 138, 178);
+}
